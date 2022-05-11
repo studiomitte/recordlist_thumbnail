@@ -1,6 +1,8 @@
 # TYPO3 Extension `recordlist_thumbnail`
 
-This extension brings back the thumbnails in the list view which have been dropped with TYPO3 11.5
+This extension brings back the thumbnails in the list view which have been dropped with TYPO3 11.5. 
+
+[#92118 - TCA ctrl thumbail setting dropped](https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/11.0/Breaking-92118-TCACtrlThumbailSettingDropped.html?highlight=thumbnail) for more information.
 
 ## Usage & Configuration
 
