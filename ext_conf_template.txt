@@ -1,0 +1,3 @@
+
+# cat=records/enable/101; type=string; label=List of tables+columns in format tx_news_domain_model_news=fal_media=tt_address:image
+list =

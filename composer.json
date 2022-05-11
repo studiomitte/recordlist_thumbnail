@@ -1,0 +1,25 @@
+{
+    "name": "studiomitte/recordlist-thumbnail",
+    "type": "typo3-cms-extension",
+    "description": "Bring back thumbnails in recordlist",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Georg Ringer",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "StudioMitte\\RecordlistThumbnail\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "recordlist_thumbnail"
+        }
+    }
+}
