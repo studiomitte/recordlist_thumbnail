@@ -19,7 +19,7 @@ class Configuration
         return $this->getSettings();
     }
 
-    public function getField(string $tableName): string
+    public function getField(string $tableName): array
     {
         $settings = $this->getSettings();
         return $settings[$tableName] ?? '';
@@ -38,7 +38,7 @@ class Configuration
                 if (count($split) !== 2) {
                     continue;
                 }
-                $settings[$split[0]] = $split[1];
+                $settings[$split[0]][] = $split[1];
             }
             return $settings;
         } catch (ExtensionConfigurationExtensionNotConfiguredException $e) {
