@@ -76,7 +76,14 @@ class XclassedDatabaseRecordList extends DatabaseRecordList {
                 }
 
                 if ($thumbnailField) {
-                    $fullRow = isset($row[$thumbnailField]) ? $row : BackendUtility::getRecord($table, $row['uid']);
+                    foreach($thumbnailFields as $thumbField){
+                        $thumbnailField = $thumbField;
+                        $fullRow = isset($row[$thumbnailField]) ? $row : BackendUtility::getRecord($table, $row['uid']);
+                        
+                        if(!empty($fullRow[$thumbnailField])){
+                            break;
+                        }
+                    }
 
                     $thumbCode = '<br />' . BackendUtility::thumbCode($fullRow, $table, $thumbnailField);
                     $theData[$fCol] .= $thumbCode;
@@ -158,7 +165,7 @@ class XclassedDatabaseRecordList extends DatabaseRecordList {
         return $rowOutput;
     }
 
-    protected function getThumbnailField(string $tableName): string
+    protected function getThumbnailField(string $tableName): array
     {
         return GeneralUtility::makeInstance(Configuration::class)->getField($tableName);
     }
