@@ -22,7 +22,7 @@ class Configuration
     public function getField(string $tableName): array
     {
         $settings = $this->getSettings();
-        return $settings[$tableName] ?? '';
+        return $settings[$tableName] ?? [];
     }
 
     /**
