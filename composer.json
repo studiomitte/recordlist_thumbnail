@@ -12,6 +12,9 @@
     "require": {
         "typo3/cms-core": "^11.5"
     },
+	"suggest": {
+		"web-vision/wv_deepltranslate": "If you want to use deepltranslate, install this extension - suggestion just to keep loading order"
+	},
     "autoload": {
         "psr-4": {
             "StudioMitte\\RecordlistThumbnail\\": "Classes"
