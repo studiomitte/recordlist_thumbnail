@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "typo3/cms-core": "^11.5"
+        "typo3/cms-core": "^11.5 || ^12"
     },
 	"suggest": {
 		"web-vision/wv_deepltranslate": "If you want to use deepltranslate, install this extension - suggestion just to keep loading order"
