@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  StudioMitte\RecordlistThumbnail\:
+    resource: '../Classes/*'
+    exclude:
+      - '../Classes/Xclass/*'
+      - '../Classes/EventListener/*'
